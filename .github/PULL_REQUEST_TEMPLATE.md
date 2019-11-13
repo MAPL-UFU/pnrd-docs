@@ -1,5 +1,5 @@
 <!--
-Thank you for sending a PR. We appreciate you spending time to help improve the Libra project.
+Thank you for sending a PR. We appreciate you spending time to help improve the MAPL project.
 -->
 
 ## Motivation

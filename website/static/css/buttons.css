@@ -12,15 +12,14 @@
 }
 
 .promoSection .button {
-  border-color: #E7E5FD;
-  color: #E7E5FD;
+  color: black;
+  background: white;
 }
 
 .button:hover,
 .promoSection .button:hover {
-  background: inherit;
-  border-color: #19CDA6;
-  color: #19CDA6;
+  background: #5645F5;
+  color: white;
 }
 
 .button[type="submit"],

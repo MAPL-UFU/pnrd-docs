@@ -1,7 +1,4 @@
-/**
- * Copyright (c) The Libra Core Contributors
- * SPDX-License-Identifier: Apache-2.0
- */
+
 
 const React = require('react');
 
@@ -20,7 +17,7 @@ function Help(props) {
   const supportLinks = [
     {
       content: `Learn more using the [documentation on this site.](${docUrl(
-        'welcome-to-libra.html',
+        'welcome-to-pnrd.html',
       )})`,
       title: 'Browse Docs',
     },

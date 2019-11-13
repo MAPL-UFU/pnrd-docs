@@ -1,7 +1,3 @@
-/**
- * Copyright (c) The Libra Core Contributors
- * SPDX-License-Identifier: Apache-2.0
- */
 
 const React = require('react');
 
@@ -60,12 +56,11 @@ class HomeSplash extends React.Component {
     return (
       <SplashContainer>
         <div className="inner">
-          <Logo img_src={baseUrl + 'img/libra-header-logo-white.png'} />
+          <Logo img_src={baseUrl + 'img/MAPL.png'} />
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href={docUrl('welcome-to-libra')}>Welcome to the Developer Site</Button>
-            <Button href={docUrl('the-libra-blockchain-paper.html')}>Libra Blockchain Technical Paper</Button>
-            <Button href={docUrl('move-overview.html')}>Getting Started With Move</Button>
+            <Button href={docUrl('welcome-to-pnrd')}>Visite the PNRD Documentation</Button>
+            <Button href={docUrl('pnrd-ipnrd-in-block-world-domain')}>PNRD Technical Paper</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -105,7 +100,7 @@ class Index extends React.Component {
           {
             content:
               'This is another description of how this project is useful',
-            image: `${baseUrl}img/libra_logo_lockup_white.svg`,
+            image: `${baseUrl}img/MAPL.png`,
             imageAlign: 'right',
             title: 'Description',
           },
@@ -129,29 +124,29 @@ class Index extends React.Component {
         className="productShowcaseSection"
         id="quickstart"
         style={{textAlign: 'center', marginBottom:'30px'}}>
-        <h2>Try Libra</h2>
-        <p>Currently available for macOS and Linux.</p>
+        <h2>Try Start using PNRD with Arduino</h2>
+        <p>Currently available for any Arduino Boards</p>
         <Container>
-          <h4>1. Clone Libra:</h4>
+          <h4>1. Clone PNRD Libraries:</h4>
           <div style={{marginLeft:"30px"}}>
             <MarkdownBlock>{
-bash`git clone https://github.com/libra/libra.git && cd libra`}</MarkdownBlock>
+bash`git clone https://github.com/MAPL-UFU/PNRD-arduino-library && cd PNRD-arduino-library`}</MarkdownBlock>
           </div>
-          <h4>2. Checkout the Testnet Branch:</h4>
+          <h4>2.Move the Libraries for Arduino libs directory:</h4>
           <div style={{marginLeft:"30px"}}>
-            <MarkdownBlock>{bash`git checkout testnet`}</MarkdownBlock>
+            <MarkdownBlock>{bash`mv -t <arduino>/libs PN532 PetriNet Pn532NfcReader Pnrd `}</MarkdownBlock>
           </div>
-          <h4>3. Install Dependencies:</h4>
+          <h4>3. Clone our exemple for Cellular Manufacturing:</h4>
           <div style={{marginLeft:"30px"}}>
-            <MarkdownBlock>{bash`./scripts/dev_setup.sh`}</MarkdownBlock>
+            <MarkdownBlock>{bash`git clone https://github.com/MAPL-UFU/pnrd-cell-manufacturing && cd pnrd-cell-manufacturing`}</MarkdownBlock>
           </div>
-            <h4>4. Run the CLI:</h4>
+            <h4>4.Run Your First PNRD Project deployed with Arduino</h4>
           <div style={{marginLeft:"30px"}}>
             <MarkdownBlock>{bash`./scripts/cli/start_cli_testnet.sh`}</MarkdownBlock>
           </div>
-            <h4>5. Run Your First Transaction:</h4>
+            <h4>5. View our PNRD documentation:</h4>
           <div style={{marginLeft:"30px"}}>
-                <Button href={'docs/my-first-transaction'}>My First Transaction</Button>
+                <Button href={'docs/pnrd-hello-world'}>PNRD Hello World</Button>
           </div>
         </Container>
       </div>

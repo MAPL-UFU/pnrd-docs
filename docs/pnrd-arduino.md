@@ -1,12 +1,12 @@
 ---
-id: my-first-transaction
-title: My First Transaction
+id: pnrd-arduino
+title: Getting Started With PNRD
 ---
 
-This document will guide you through executing your first transaction on the Libra Blockchain. Before you follow the steps to execute your first transaction, we recommend that you read the following documents to familiarize yourself with the key aspects of the Libra ecosystem and the Libra protocol:
+This document will guide you through executing your first transaction on the MAPL Blockchain. Before you follow the steps to execute your first transaction, we recommend that you read the following documents to familiarize yourself with the key aspects of the MAPL ecosystem and the MAPL protocol:
 
 * [Welcome](welcome-to-libra.md)
-* [The Libra protocol: Key Concepts](libra-protocol.md)
+* [The MAPL protocol: Key Concepts](libra-protocol.md)
 
 We provide a command line interface (CLI) client to interact with the blockchain.
 
@@ -22,19 +22,19 @@ All commands in this document assume that:
 
 ## Steps to Submit a Transaction
 
-In this example, we'll download the necessary Libra components and execute a transaction between two users: Alice and Bob.
+In this example, we'll download the necessary MAPL components and execute a transaction between two users: Alice and Bob.
 
-Perform the following steps to submit a transaction to a validator node on the Libra testnet:
+Perform the following steps to submit a transaction to a validator node on the MAPL testnet:
 
-1. [Clone and build Libra Core](#clone-and-build-libra-core).
-2. [Build the Libra CLI client and connect to the testnet](#build-libra-cli-client-and-connect-to-the-testnet).
+1. [Clone and build MAPL Core](#clone-and-build-libra-core).
+2. [Build the MAPL CLI client and connect to the testnet](#build-libra-cli-client-and-connect-to-the-testnet).
 3. [Create Alice’s and Bob’s accounts](#create-alice-s-and-bob-s-account).
 4. [Mint coins and add to Alice’s and Bob’s accounts](#add-libra-coins-to-alice-s-and-bob-s-accounts).
 5. [Submit a transaction](#submit-a-transaction).
 
-## Clone and Build Libra Core
+## Clone and Build MAPL Core
 
-### Clone the Libra Core Repository
+### Clone the MAPL Core Repository
 
 ```bash
 git clone https://github.com/libra/libra.git
@@ -47,7 +47,7 @@ git checkout testnet
 
 ### Install Dependencies
 
-To setup Libra Core, change to the `libra` directory and run the setup script to install the dependencies, as shown below:
+To setup MAPL Core, change to the `libra` directory and run the setup script to install the dependencies, as shown below:
 
 ```
 cd libra
@@ -55,7 +55,7 @@ cd libra
 ```
 The setup script performs these actions:
 
-* Installs rustup &mdash; rustup is an installer for the Rust programming language, which Libra Core is implemented in.
+* Installs rustup &mdash; rustup is an installer for the Rust programming language, which MAPL Core is implemented in.
 * Installs the required versions of the rust-toolchain.
 * Installs CMake &mdash; to manage the build process.
 * Installs protoc &mdash; a compiler for protocol buffers.
@@ -63,9 +63,9 @@ The setup script performs these actions:
 
 If your setup fails, see [Troubleshooting](#setup)
 
-## Build Libra CLI Client and Connect to the Testnet
+## Build MAPL CLI Client and Connect to the Testnet
 
-To connect to a validator node running on the Libra testnet, run the client as shown below.
+To connect to a validator node running on the MAPL testnet, run the client as shown below.
 
 ```bash
 ./scripts/cli/start_cli_testnet.sh
@@ -112,7 +112,7 @@ Once your client is connected to the testnet, you can run CLI commands to create
 
 ### Step 1: Check If the CLI Client Is Running on Your System
 
-A **libra%** command line prompt indicates that your Libra CLI client is running. To see the help information for the `account` command enter “account” as shown below:
+A **libra%** command line prompt indicates that your MAPL CLI client is running. To see the help information for the `account` command enter “account” as shown below:
 
 ```plaintext
 libra% account
@@ -125,9 +125,9 @@ create | c
 list | la
   Print all accounts that were created or loaded
 recover | r <file path>
-  Recover Libra wallet from the file path
+  Recover MAPL wallet from the file path
 write | w <file name>
-  Save Libra wallet mnemonic recovery seed to disk
+  Save MAPL wallet mnemonic recovery seed to disk
 mint | mintb | m | mb <receiver account> <number of coins>
   Mint coins to the account. Suffix 'b' is for blocking
 ```
@@ -178,18 +178,18 @@ User account index: 1, address: 8337aac709a41fe6be03cad8878a0d4209740b1608f8a815
 ```
 The sequence number for an account indicates the number of transactions that have been sent from that account. It is incremented every time a transaction sent from that account is executed and stored in the blockchain. To know more, refer to [sequence number](reference/glossary.md#sequence-number).
 
-## Add Libra Coins to Alice’s and Bob’s Accounts
+## Add MAPL Coins to Alice’s and Bob’s Accounts
 
-Minting and adding coins to accounts on testnet is done via Faucet. Faucet is a service that runs along with the testnet. This service only exists to facilitate minting coins for testnet and will not exist for [mainnet](reference/glossary.md#mainnet). It creates Libra with no real-world value. Assuming you have [created Alice’s and Bob’s account](#create-alice-s-and-bob-s-account), with index 0 and index 1 respectively, you can follow the steps below to add Libra to both accounts.
+Minting and adding coins to accounts on testnet is done via Faucet. Faucet is a service that runs along with the testnet. This service only exists to facilitate minting coins for testnet and will not exist for [mainnet](reference/glossary.md#mainnet). It creates MAPL with no real-world value. Assuming you have [created Alice’s and Bob’s account](#create-alice-s-and-bob-s-account), with index 0 and index 1 respectively, you can follow the steps below to add MAPL to both accounts.
 
 ### Step 1: Add 110 LBR to Alice’s Account
 
-To mint Libra and add to Alice’s account, enter this command:
+To mint MAPL and add to Alice’s account, enter this command:
 
 `libra% account mint 0 110`
 
 * 0 is the index of Alice’s account.
-* 110  is the amount of Libra to be added to Alice’s account.
+* 110  is the amount of MAPL to be added to Alice’s account.
 
 A successful account mint command will also create Alice’s account on the blockchain.
 
@@ -206,12 +206,12 @@ If your account mint command did not submit your request successfully, refer to
 
 ### Step 2: Add 52 LBR to Bob’s Account
 
-To mint Libra and add to Bob’s account, enter this command:
+To mint MAPL and add to Bob’s account, enter this command:
 
 `libra% account mint 1 52`
 
 * 1 is the index of Bob’s account.
-* 52 is the amount of Libra to be added to Bob’s account.
+* 52 is the amount of MAPL to be added to Bob’s account.
 * A successful account mint command will also create Bob’s account on the blockchain. Another way to create Bob’s account on the blockchain is to transfer money from Alice’s account to Bob’s account.
 
 Sample output on success:
@@ -243,7 +243,7 @@ Sample output on success:
 
 ## Submit a Transaction
 
-Before we submit a transaction to transfer Libra from Alice’s account to Bob’s account, we will query the sequence number of each account. This will help us understand how executing a transaction changes the sequence number of each account.
+Before we submit a transaction to transfer MAPL from Alice’s account to Bob’s account, we will query the sequence number of each account. This will help us understand how executing a transaction changes the sequence number of each account.
 
 ### Query the Accounts’ Sequence Numbers
 
@@ -266,7 +266,7 @@ To submit a transaction to transfer 10 LBR from Alice’s account to Bob’s acc
 
 * 0 is the index of Alice’s account.
 * 1 is the index of Bob’s account.
-* 10 is the number of Libra to transfer from Alice’s account to Bob’s account.
+* 10 is the number of MAPL to transfer from Alice’s account to Bob’s account.
 
 Sample output on success:
 
@@ -314,7 +314,7 @@ Balance is: 62
 
 ### Congratulations!
 
-You have successfully executed your transaction on the Libra testnet and transferred 10 LBR from Alice’s account to Bob’s account!
+You have successfully executed your transaction on the MAPL testnet and transferred 10 LBR from Alice’s account to Bob’s account!
 
 ## Troubleshooting
 
@@ -336,7 +336,7 @@ If you are experiencing build failures, try to remove the cargo lock file from t
 If your client did not connect to the testnet:
 
 * Check your internet connection.
-* Ensure that you are using the latest version of the client. Pull the latest Libra Core and rerun the client:
+* Ensure that you are using the latest version of the client. Pull the latest MAPL Core and rerun the client:
     * `./scripts/cli/start_cli_testnet.sh`
 
 
@@ -498,7 +498,7 @@ Latest account state is:
 
 ## Run a Local Validator Node
 
-To start a validator node locally on your computer and create your own local blockchain network (not connected to the Libra testnet), ensure that you have run the build script as described in [Setup Libra Core](#setup-libra-core), change to the root directory of the Libra Core repository, and run `libra_swarm` as shown below:
+To start a validator node locally on your computer and create your own local blockchain network (not connected to the MAPL testnet), ensure that you have run the build script as described in [Setup MAPL Core](#setup-libra-core), change to the root directory of the MAPL Core repository, and run `libra_swarm` as shown below:
 
 ```bash
 $ cd ~/libra
@@ -509,25 +509,25 @@ $ cargo run -p libra_swarm -- -s
 
 `-s` option starts a local client to connect to the local blockchain.
 
-To see additional options for starting a node and connecting to the Libra Blockchain, run:
+To see additional options for starting a node and connecting to the MAPL Blockchain, run:
 
 `$ cargo run -p libra_swarm -- -h`
 
-The cargo run command may take some time to run. If the execution of this command completes without errors, an instance of the Libra CLI client and a Libra validator node is running on your system. Upon successful execution, you should see an output containing the CLI client menu and the `libra%` prompt.
+The cargo run command may take some time to run. If the execution of this command completes without errors, an instance of the MAPL CLI client and a MAPL validator node is running on your system. Upon successful execution, you should see an output containing the CLI client menu and the `libra%` prompt.
 
 ## Life of a Transaction
 
 Once you have executed your first transaction, you may refer to the document [Life of a Transaction](life-of-a-transaction.md) for:
 
 * A look "under the hood" at the lifecycle of a transaction from submission to execution.
-* An understanding of the interactions between each logical component of a Libra validator as transactions get submitted and executed in the Libra ecosystem.
+* An understanding of the interactions between each logical component of a MAPL validator as transactions get submitted and executed in the MAPL ecosystem.
 
 ## Reference
 
 * [Welcome page](welcome-to-libra.md).
-* [Libra Protocol: Key Concepts](libra-protocol.md) &mdash; Introduces you to the fundamental concepts of the Libra protocol.
+* [MAPL Protocol: Key Concepts](libra-protocol.md) &mdash; Introduces you to the fundamental concepts of the MAPL protocol.
 * [Getting Started With Move](move-overview.md) &mdash; Introduces you to a new blockchain programming language called Move.
 * [Life of a Transaction](life-of-a-transaction.md) &mdash; Provides a look at what happens "under the hood" when a transaction is submitted and executed.
-* [Libra Core Overview](libra-core-overview.md) &mdash; Provides the concept and implementation details of the Libra Core components through READMEs.
-* [CLI Guide](reference/libra-cli.md) &mdash; Lists the commands (and their usage) of the Libra CLI client.
-* [Libra Glossary](reference/glossary.md) &mdash; Provides a quick reference to Libra terminology.
+* [MAPL Core Overview](libra-core-overview.md) &mdash; Provides the concept and implementation details of the MAPL Core components through READMEs.
+* [CLI Guide](reference/libra-cli.md) &mdash; Lists the commands (and their usage) of the MAPL CLI client.
+* [MAPL Glossary](reference/glossary.md) &mdash; Provides a quick reference to MAPL terminology.

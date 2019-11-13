@@ -1,7 +1,4 @@
-/*
- * Copyright (c) The Libra Core Contributors
- * SPDX-License-Identifier: CC-BY-4.0
- */
+
 
 html body {
   font-family: 'Helvetica', sans-serif;
@@ -37,29 +34,30 @@ nav {
 }
 
 .navigationSlider .slidingNav ul li a {
-  color: #39298C;
+  color: black;
   background-color: #fff;
   transition: all 0.2s;
 }
 
 .navigationSlider .slidingNav ul li a:hover,
 .navigationSlider .slidingNav ul li a:focus {
-  color: #39298C;
+  color: black;
   background-color: inherit;
   text-decoration: underline;
 }
 
 .navigationSlider .slidingNav ul li.siteNavItemActive > a,
 .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
-  color: #39298C;
+  color: black;
   background-color: inherit;
   text-decoration: underline;
 }
 
 .homeContainer,
 .formHero {
-  background-color: #1E4855;
-  background-image: url('../img/hero.jpg');
+  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(90deg,#4776E6,#8E54E9);
+  /* background-image: url('../img/petrinet.png'); */
   background-size: cover;
   padding: 4rem 0;
 }
@@ -72,7 +70,7 @@ nav {
 }
 
 .projectTitle {
-  color: #ffffff;
+  color: white;
   font-weight: 300;
 }
 
@@ -98,7 +96,7 @@ div.productShowcaseSection {
 
 .productShowcaseSection h4 {
   font-size: 1.5rem;
-  color: #39298C !important;
+  color: black !important;
   padding-top: 0em;
   margin-top: 0em;
 }
@@ -144,11 +142,11 @@ div#quickstart ol {
 }
 
 .nav-footer {
-  background-color: #15112C;
+  background-color: #1a1337;
 }
 
 .nav-footer .sitemap a {
-  color: #efefef;
+  color: white;
 }
 
 .nav-footer .sitemap a:hover {
@@ -158,11 +156,12 @@ div#quickstart ol {
 .nav-footer h5 {
   padding-top: 5px;
   font-size: 13pt;
+  color: #9d92ff!important;
 }
 
 a,
 p a {
-  color: #39298C;
+  color: black;
   transition: all 0.2s;
 }
 
@@ -199,11 +198,11 @@ sub {
 }
 
 .toc .toggleNav ul li a:hover {
-  color: #39298C;
+  color: black;
 }
 
 .toc .toggleNav .navGroup .navListItemActive a {
-  color: #39298C;
+  color: black;
 }
 
 .docsNavContainer .toc .navBreadcrumb {

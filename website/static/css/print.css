@@ -33,5 +33,6 @@
 
   #footer .copyright {
     display: block !important;
+    color:gray!important;
   }
 }

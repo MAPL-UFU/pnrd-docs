@@ -1,5 +1,5 @@
 /**
- * Copyright (c) The Libra Core Contributors
+ * Copyright (c) The MAPL Core Contributors
  * SPDX-License-Identifier: CC-BY-4.0
  *
  * @format
@@ -17,28 +17,27 @@ const baseUrl = '/';
 const users = [];
 
 const siteConfig = {
-  title: 'Libra',
-  tagline: "Libra’s mission is to enable a simple global currency and financial infrastructure that empowers billions of people.",
-  url: 'https://developers.libra.org',
+  title: 'MAPL - PNRD Docs',
+  tagline: "PNRD is a formal data structure grounded in elementary Petri net which stores Petri net equation parts in RFID components",
+  url: 'https://mecanica.ufu.br/mapl/pnrd',
   baseUrl: baseUrl,
   cleanUrl: true, // No .html extensions for paths
 
-  headerIcon: 'img/libra-nav-logo.png',
-  footerIcon: 'img/libra-logomark-white.png',
+  headerIcon: 'img/MAPL.png',
+  footerIcon: 'img/ufu.png',
   favicon: 'img/libra.ico',
   cname: 'developers.libra.org',
 
   // used for publishing and more
-  organizationName: 'libra',
+  organizationName: 'MAPL-UFU',
   projectName: 'website',
 
   // links that will be used in the header navigation bar
   headerLinks: [
-    {doc: 'welcome-to-libra', label: 'Documentation'},
-    {href: 'https://community.libra.org', label: 'Community'},
-    {blog: true, label: "Blog" },
-    {href: 'https://libra.org', label: 'libra.org'},
-    {href: 'https://github.com/libra/libra', label: 'GitHub'}
+    {doc: 'welcome-to-pnrd', label: 'Documentation'},
+    {href: 'http://www.mecanica.ufu.br/laboratorio/laboratorio-de-planejamento-automatico-de-manufatura', label: 'MAPL'},
+    {href: 'http://www.mecanica.ufu.br/', label: 'FEMEC/UFU'},
+    {href: 'https://github.com/MAPL-UFU', label: 'GitHub'}
     // {search: false}, // position search box to the very right
   ],
 
@@ -47,11 +46,11 @@ const siteConfig = {
 
   // search integration w/ algolia
 
-  // This website manually inserts the Algolia Search bar in Footer.js
-  algolia: {
-    apiKey: '0d48ee629d39ddc4916eeef7755a0c4c',
-    indexName: 'libra',
-  },
+  // // This website manually inserts the Algolia Search bar in Footer.js
+  // algolia: {
+  //   apiKey: '0d48ee629d39ddc4916eeef7755a0c4c',
+  //   indexName: 'libra',
+  // },
 
   // colors for website
   colors: {
@@ -96,11 +95,11 @@ const siteConfig = {
   docsSideNavCollapsible: false,
 
   // URL for editing docs
-  editUrl: 'https://github.com/libra/website/edit/master/docs/',
+  editUrl: 'https://github.com/MAPL-UFU/pnrd-docs/edit/master/docs/',
 
   // Open Graph and Twitter card images
-  ogImage: 'img/libra.png',
-  twitterImage: 'img/libra.png',
+  ogImage: 'img/MAPL.png',
+  twitterImage: 'img/MAPL.png',
 
   // custom highlighter for Move
   highlight: {

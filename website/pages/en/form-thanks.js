@@ -1,7 +1,4 @@
-/**
- * Copyright (c) The Libra Core Contributors
- * SPDX-License-Identifier: Apache-2.0
- */
+
 
 const React = require('react');
 const FormContainer = require(`${process.cwd()}/core/ContactForm/form-container.js`);
