@@ -25,8 +25,8 @@ const siteConfig = {
 
   headerIcon: 'img/MAPL.png',
   footerIcon: 'img/ufu.png',
-  favicon: 'img/libra.ico',
-  cname: 'developers.libra.org',
+  favicon: 'img/pnrd.ico',
+  cname: 'developers.pnrd.org',
 
   // used for publishing and more
   organizationName: 'MAPL-UFU',
@@ -49,7 +49,7 @@ const siteConfig = {
   // // This website manually inserts the Algolia Search bar in Footer.js
   // algolia: {
   //   apiKey: '0d48ee629d39ddc4916eeef7755a0c4c',
-  //   indexName: 'libra',
+  //   indexName: 'pnrd',
   // },
 
   // colors for website

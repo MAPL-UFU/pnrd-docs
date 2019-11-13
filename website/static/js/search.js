@@ -21,9 +21,9 @@
     const script = document.createElement('script');
     script.innerHTML = `
       var search = docsearch({
-        appId: '70WKXLZ6RZ',
-        apiKey: '7c82db8b8ceae28c1601f34346452f65',
-        indexName: 'libra.github.io',
+        appId: '',
+        apiKey: '""',
+        indexName: 'pnrd',
         inputSelector: '#search_input_react'
       });
     `;
