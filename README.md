@@ -1,64 +1,46 @@
-<a href="https://developers.libra.org">
-		<img width="200" src="./libra.png" alt="MAPL Logo" />
+<a href="http://www.mecanica.ufu.br/laboratorio/laboratorio-de-planejamento-automatico-de-manufatura">
+		<img width="200" src="./MAPL-UFU.png" alt="MAPL Logo" />
 </a>
 
 <hr/>
 
-[![CircleCI](https://circleci.com/gh/libra/libra.svg?style=shield)](https://circleci.com/gh/libra/libra)
-[![License](https://img.shields.io/badge/license-Apache-green.svg)](LICENSE.md)
+**Welcome to the PNRD Documentation!** In this Documentation we will present the core concepts and  implementation of an innovative approach called PNRD(elementary Petri Net inside a RFID distributed Database) and its variation, the inverted PNRD called iPNRD. We will describe everything you need to know to deploy your own applications using PNRD.
 
-MAPL Core implements a decentralized, programmable database which provides a financial infrastructure that can empower billions of people.
-
-## Note to Developers
-* MAPL Core is a prototype.
-* The APIs are constantly evolving and designed to demonstrate types of functionality. Expect substantial changes before the release.
-* We've launched a testnet that is a live demonstration of an early prototype of the MAPL Blockchain software.
-
-## Contributing
-
-Read our [Contributing guide](https://developers.libra.org/docs/community/contributing). Find out what's coming on our [blog](https://developers.libra.org/blog/2019/06/18/the-path-forward).
-
-## Getting Started
-
-### Learn About MAPL
-* [Welcome](https://developers.libra.org/docs/welcome-to-libra)
-* [MAPL Protocol: Key Concepts](https://developers.libra.org/docs/libra-protocol)
-* [Life of a Transaction](https://developers.libra.org/docs/life-of-a-transaction)
-
-### Try MAPL Core
-* [My First Transaction](https://developers.libra.org/docs/my-first-transaction)
-* [Getting Started With Move](https://developers.libra.org/docs/move-overview)
-
-### Technical Papers
-* [The MAPL Blockchain](https://developers.libra.org/docs/the-libra-blockchain-paper)
-* [Move: A Language With Programmable Resources](https://developers.libra.org/docs/move-paper)
-* [State Machine Replication in the MAPL Blockchain](https://developers.libra.org/docs/state-machine-replication-paper)
-
-### Blog
-* [MAPL: The Path Forward](https://developers.libra.org/blog/2019/06/18/the-path-forward/)
-
-### MAPL Codebase
-
-* [MAPL Core Overview](https://developers.libra.org/docs/libra-core-overview)
-* [Admission Control](https://developers.libra.org/docs/crates/admission-control)
-* [Bytecode Verifier](https://developers.libra.org/docs/crates/bytecode-verifier)
-* [Consensus](https://developers.libra.org/docs/crates/consensus)
-* [Crypto](https://developers.libra.org/docs/crates/crypto)
-* [Execution](https://developers.libra.org/docs/crates/execution)
-* [Mempool](https://developers.libra.org/docs/crates/mempool)
-* [Move IR Compiler](https://developers.libra.org/docs/crates/ir-to-bytecode)
-* [Move Language](https://developers.libra.org/docs/crates/move-language)
-* [Network](https://developers.libra.org/docs/crates/network)
-* [Storage](https://developers.libra.org/docs/crates/storage)
-* [Virtual Machine](https://developers.libra.org/docs/crates/vm)
+> Originally, PNRD was developed for the identification and monitoring of passive agents, such as commercial items, parts, logistics units, and physical products. The process that an object must follow is associated with its behavioral model through Petri net data structure. Thus, PNRD is a formal data structure grounded in elementary Petri net which stores Petri net equation parts in RFID components: tag and reader —  _Tavares, J.J.P.Z.D.S._ [PNRD and iPNRD Integration Assisting Adaptive Control in Block World Domain](pnrd-ipnrd-in-block-world-domain.md)
 
 
-## Community
+The documentation discusses:
 
-Join us on the [MAPL Discourse](https://community.libra.org)
+* What the PNRD is and the fundamental concepts for its implementation. [What is PNRD?](what-is-pnrd.md)
+* [PNRD Arduino Core Concepts](reference/pnrd-core-arduino.md).
+* A practical implementation of PNRD using Arduino.
+* How to be part of the community built around this new ecosystem.
 
-Get the latest updates to our project by signing up to our [newsletter](https://developers.libra.org/newsletter_form).
 
-## License
+## The Libraries for Arduino
 
-MAPL Core is licensed as [Apache 2.0](https://github.com/libra/libra/blob/master/LICENSE)
+The Arduino ecosystem for PNRD implementation is composed of 3 Libs.
+
+* The Petri Net Lib: Designed for deal with application's Petri Net Setting, Verification of exceptions, trigger events and the boolean conditions associated with transations
+
+* The PNRD lib: Created to define what information will be saved in the tag and Update of the tag's history.
+
+* The PN532 reader Lib: Has Methods to write and read the RFID tag
+
+Refer to [Getting Started With PNRD](reference/pnrd-core-arduino.md) for further information.
+
+
+## PNRD Arduino Core Concepts
+
+We discuss the technical concepts of arduino libraries.
+
+* [PNRD Arduino Core Concepts](reference/pnrd-core-arduino.md).
+
+
+## Reference
+
+* [Petri Net: Key Concepts](petri-net.md) &mdash; Introduces you to the fundamental concepts of the Petri Network.
+* [What is a PNRD?](what-is-pnrd.md) &mdash; Introduces you to the fundamental of the PNRD and the core applications.
+* [Getting Started With PNRD](pnrd-arduino.md) &mdash; Tutorial for Cellular Manufacturing Aplication with PNRD and Arduino.
+* [IPNRD and Applications](ipnrd-applications.md) &mdash; Introduces you to the fundamental of the IPNRD with practical exemple.
+* [PNRD Arduino Core Concepts](pnrd-core-arduino.md) &mdash; Provides the concept and implementation details of the PNRD Arduino Libraries.
