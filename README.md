@@ -1,5 +1,5 @@
 <a href="http://www.mecanica.ufu.br/laboratorio/laboratorio-de-planejamento-automatico-de-manufatura">
-		<img width="200" src="./MAPL-UFU.png" alt="MAPL Logo" />
+		<img width="200" src="./MAPL.png" alt="MAPL Logo" />
 </a>
 
 <hr/>
